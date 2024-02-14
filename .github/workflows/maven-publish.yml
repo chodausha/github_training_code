@@ -8,7 +8,7 @@ on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/release1'
+    if: github.ref == 'refs/heads/release-1'
     steps:
     - name: Step1Job1
       run: |
@@ -17,7 +17,7 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/release3'
+    if: github.ref == 'refs/heads/Release-2'
     steps:
     - name: Step1Job2
       run: |
