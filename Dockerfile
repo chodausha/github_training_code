@@ -7,7 +7,7 @@ RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9
 RUN tar xvf apache-tomcat-9.0.64.tar.gz 
 RUN cp -r apache-tomcat-9.0.64/* /opt/tomcat/.
 
-COPY /usr/bin/git log -1 --format='%H' /home/runner/work/github_training_code/github_training_code/
+COPY my-app 2.0-SNAPSHOT.war http://192.168.1.2:8081/repository/maven-snapshots/nexus-snapshots
 
 EXPOSE 8080 
 
