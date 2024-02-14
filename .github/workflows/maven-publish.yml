@@ -6,6 +6,24 @@ name: Maven Package
 on: push
 
 jobs:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/release1'
+    steps:
+    - name: Step1Job1
+      run: |
+        sleep 10
+        echo "Step1Job1"
+
+  job2:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/release3'
+    steps:
+    - name: Step1Job2
+      run: |
+        sleep 10
+        echo "Step1Job2"
   build:
 
     runs-on: ubuntu-latest
