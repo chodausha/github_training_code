@@ -6,7 +6,6 @@ name: Maven Package
 on: push
 
 jobs:
-jobs:
   job1:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/release1'
